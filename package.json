@@ -1,11 +1,7 @@
 {
   "name": "hunterdunning",
   "version": "1.0.0",
-<<<<<<< HEAD
   "description": "SWD600 - WebDesign for Industry - AE1",
-=======
-  "description": "SWD600 Web Design for Industry - AE1",
->>>>>>> 31561ba889cf0f844ae0a4fc277cd32f43fc1c0e
   "main": "Gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
