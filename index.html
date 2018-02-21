@@ -4,22 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="css/style.css">
   <title> Hunter Dunning </title>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
-
   <header>
-      <div class="header__logo">
-          <a href="#">
-            <img src="img/logo.svg" alt="">
-          </a>
-      </div>
-      <!-- /.header__logo -->
-      <div class="header__nav">
+    <div class="container">
+        <div class="row">
 
-      </div>
-      <!-- /.header__nav -->
+          <div class="col-md-2 logo">
+              <a href="#">
+                <img src="img/logo.svg" alt="Hunter Dunning">
+              </a>
+          </div>
+          <!-- /.header__logo -->
+          <ul class="col-md-5 nav pull-right">
+            <li class="nav__link"><a href="tel:+4401243779789">+44 (0) 1243 779789</a></li>
+            <li class="nav__link"><a href="#">Login</a></li>
+            <li class="nav__link"><a href="#">Jobs</a></li>
+            <li class="nav__link"><a href="#">Employs</a></li>
+            <li id="toggleNav" class="nav__link nav__icon"><a href="#"> <img src="img/menu-icon.svg" alt=""> </a></li>
+          </ul>
+          <!-- /.header__nav -->
+        </div>
+        <!-- /.row -->
+
+
+        <div class="row">
+
+          <div class="hero">
+            <h1>Build your architecture career with us.</h1>
+            <form>
+              <input type="text" placeholder="Search for keywords">
+              <select>
+                <option value="" default>Job Option</option>
+              </select>
+              <select>
+                <option value="" default>Category</option>
+              </select>
+              <select>
+                <option value="" default>Location</option>
+              </select>
+              <input type="submit">
+
+            </form>
+          </div>
+          <!-- /.hero -->
+
+        </div>
+        <!-- /.row -->
+
+
+
+    </div>
+    <!-- /.container -->
+
   </header>
 
 
