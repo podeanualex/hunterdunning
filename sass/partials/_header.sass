@@ -1,15 +1,121 @@
 /* ====================
-    Reset
+    Header
    ==================== */
 
 
 header
   padding-top: 60px
   background: url('../img/header-bg-simple.png') 0 0 no-repeat
+  padding-bottom: 200px
   .logo
 
 .nav
+  padding-top: 25px
   .nav__link
-    display: inline
+    float: left
+    line-height: 30px
+    margin-right: 26px
+    &:hover
+      a
+        text-decoration: none
+        padding-bottom: 5px
+        box-shadow: 0 2px 0 $purple
     a
       color: #000
+      @include transition(all, .2s, ease-in-out)
+  .nav__link-no-boxshadow
+    &:hover
+      a
+        padding-bottom: 0px
+        box-shadow: 0 0px 0 $purple
+  .nav__link-green-arrow
+    &::after
+      content: ''
+      display: inline-block
+      background: transparent url('../img/menu-icon-green-triangle.svg') center center no-repeat
+  .nav__icon
+    &:hover
+      a
+        svg
+          @include transition(all, .2s, ease-in-out)
+          background: #000
+        .line
+          fill: #FFF
+          @include transition(all, .2s, ease-in-out)
+
+
+.hero
+  margin: 122px 0
+  .title
+    font-size: 55px
+    font-family: 'Gotham-Book'
+    width: 664px
+    word-break: normal
+    margin-bottom: 20px
+    span
+      @include transition(all, .2s, ease-in-out)
+    &:hover
+      span
+        color: $purple
+  .form
+    .form__input
+      height: 55px
+      width: 300px
+      border: 0
+      padding: 0 5px 0 25px
+      font-size: 18px
+      font-family: 'Gotham-Light'
+      background: #FFF
+      @include transition(all, .3s, ease-in-out)
+      &:hover
+        box-shadow: 2px 4px 10px rgba(0,0,0,.1)
+      &:focus
+        outline: 0
+    .form__select
+      height: 55px
+      width: 150px
+      border: 0
+      border-radius: 0
+      padding: 0 21px
+      -webkit-appearance: none
+      -moz-appearance: none
+      background: #FFF url('../img/form-select-triangle.svg') 125px center no-repeat
+      &:focus
+        outline: 0
+      @include transition(all, .3s, ease-in-out)
+      &:hover
+        box-shadow: 2px 4px 10px rgba(0,0,0,.1)
+    .form__submit
+      border: 0
+      border-radius: 0
+      height: 55px
+      width: 101px
+      text-indent: -9999px
+      border: 5px solid #000
+      background: transparent url('../img/search-icon-btn.svg') center center no-repeat
+      @include transition(all, .1s, ease-in-out)
+      &:hover
+        background: #000 url('../img/search-icon-btn-white.svg') center center no-repeat
+
+
+
+.focus
+  .focus__list
+    @include clearfix
+    h3
+      font-family: 'Gotham-Book'
+      margin-bottom: 29px
+    li
+      margin-bottom: 14px
+      float: left
+      a
+        color: #FFFFFF
+        font-size: 14px
+        font-family: 'Gotham-Book'
+  .focus__list-twocolumn
+    li
+      width: 50%
+
+  .focus__list-threecolumn
+    li
+      width: 33%
