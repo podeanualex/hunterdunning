@@ -15,6 +15,7 @@ header
     float: left
     line-height: 30px
     margin-right: 26px
+    position: relative
     &:hover
       a
         text-decoration: none
@@ -29,9 +30,13 @@ header
         padding-bottom: 0px
         box-shadow: 0 0px 0 $purple
   .nav__link-green-arrow
-    &::after
+    &:after
       content: ''
-      display: inline-block
+      width: 8px
+      height: 6px
+      position: absolute
+      top: 12px
+      right: -17px
       background: transparent url('../img/menu-icon-green-triangle.svg') center center no-repeat
   .nav__icon
     &:hover
@@ -71,6 +76,7 @@ header
         box-shadow: 2px 4px 10px rgba(0,0,0,.1)
       &:focus
         outline: 0
+        box-shadow: 2px 4px 10px rgba(0,0,0,.1)
     .form__select
       height: 55px
       width: 150px
@@ -82,6 +88,7 @@ header
       background: #FFF url('../img/form-select-triangle.svg') 125px center no-repeat
       &:focus
         outline: 0
+        box-shadow: 2px 4px 10px rgba(0,0,0,.1)
       @include transition(all, .3s, ease-in-out)
       &:hover
         box-shadow: 2px 4px 10px rgba(0,0,0,.1)

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* ====================
     Reset
    @mixin =================== */
@@ -50,7 +51,8 @@ header {
   .nav .nav__link {
     float: left;
     line-height: 30px;
-    margin-right: 26px; }
+    margin-right: 26px;
+    position: relative; }
     .nav .nav__link:hover a {
       text-decoration: none;
       padding-bottom: 5px;
@@ -65,9 +67,13 @@ header {
   .nav .nav__link-no-boxshadow:hover a {
     padding-bottom: 0px;
     box-shadow: 0 0px 0 #B30086; }
-  .nav .nav__link-green-arrow::after {
+  .nav .nav__link-green-arrow:after {
     content: '';
-    display: inline-block;
+    width: 8px;
+    height: 6px;
+    position: absolute;
+    top: 12px;
+    right: -17px;
     background: transparent url("../img/menu-icon-green-triangle.svg") center center no-repeat; }
   .nav .nav__icon:hover a svg {
     -webkit-transition: all 0.2s ease-in-out;
@@ -116,7 +122,8 @@ header {
     .hero .form .form__input:hover {
       box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); }
     .hero .form .form__input:focus {
-      outline: 0; }
+      outline: 0;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); }
   .hero .form .form__select {
     height: 55px;
     width: 150px;
@@ -132,7 +139,8 @@ header {
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
     .hero .form .form__select:focus {
-      outline: 0; }
+      outline: 0;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); }
     .hero .form .form__select:hover {
       box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1); }
   .hero .form .form__submit {
@@ -174,9 +182,127 @@ header {
 .focus .focus__list-threecolumn li {
   width: 33%; }
 
+/* Gotham */
+font-face {
+  font-family: 'Gotham-Light';
+  src: url("../fonts/gotham/Gotham-Light.otf"); }
+
+font-face {
+  font-family: 'Gotham-Book';
+  src: url("../fonts/gotham/Gotham-Book.otf"); }
+
+font-face {
+  font-family: 'Gotham-Bold';
+  src: url("../fonts/gotham/Gotham-Bold.otf"); }
+
+font-face {
+  font-family: 'Gotham-Medium';
+  src: url("../fonts/gotham/Gotham-Medium.otf"); }
+
+/* Gotham */
+/* Gotham */
+.featuredJobs {
+  padding: 150px 0; }
+  .featuredJobs .featuredJobs__title {
+    color: #464646;
+    font-size: 24px;
+    font-family: 'Gotham-Book'; }
+    .featuredJobs .featuredJobs__title .featuredJobs__line {
+      margin: 10px 0 30px 0;
+      background: #B30086;
+      width: 100px;
+      height: 2px;
+      display: block; }
+  .featuredJobs .featuredJobs__content {
+    color: #464646;
+    font-size: 16px;
+    font-family: 'Gotham-Book';
+    line-height: 24px; }
+  .featuredJobs .featuredJobs__jobs .featuredJobs_box {
+    padding: 20px;
+    min-height: 250px;
+    margin-top: 100px;
+    font-family: 'Gotham-Book';
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .featuredJobs .featuredJobs__jobs .featuredJobs_box::after {
+      display: block;
+      content: "";
+      clear: both; }
+    .featuredJobs .featuredJobs__jobs .featuredJobs_box:hover {
+      box-shadow: 0 5px 19px rgba(0, 0, 0, 0.07); }
+      .featuredJobs .featuredJobs__jobs .featuredJobs_box:hover h3 {
+        color: #B30086; }
+    .featuredJobs .featuredJobs__jobs .featuredJobs_box h3 {
+      margin-bottom: 24px;
+      font-size: 17px;
+      color: #464646;
+      letter-spacing: 1.24px;
+      line-height: 20px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .featuredJobs .featuredJobs__jobs .featuredJobs_box p {
+      margin-bottom: 24px;
+      font-size: 14px;
+      color: #464646;
+      line-height: 25px;
+      margin-bottom: 11px; }
+    .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags {
+      margin-bottom: 18px; }
+      .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags li {
+        color: #7B7B7B;
+        font-size: 14px;
+        display: inline; }
+        .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags li::after {
+          content: '•';
+          margin: 0 5px; }
+        .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags li:last-child::after {
+          content: ''; }
+    .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_links li {
+      display: inline; }
+      .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_links li:first-child::after {
+        content: '•';
+        margin: 0 5px 0 7px; }
+    .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_links a {
+      box-shadow: inset 0 -1px 0 #B30086;
+      color: #B30086;
+      padding-bottom: 3px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_links a:hover {
+        text-decoration: none;
+        color: #464646;
+        box-shadow: inset 0 0 0 #B30086; }
+
+.partners {
+  height: 400px; }
+  .partners .partners__topBg {
+    background: transparent url(../img/city-section-top-bg.svg) center center no-repeat;
+    width: 100%;
+    background-size: contain;
+    height: 129px;
+    z-index: 10;
+    position: relative; }
+  .partners .partners__content {
+    background: #F5F5F5;
+    z-index: 8;
+    position: relative;
+    padding: 30px 0;
+    margin-top: -25px; }
+
 * {
   margin: 0; }
 
 body {
   padding: 10px;
+  background: #FFFFFF;
   font-family: 'Gotham-Light'; }

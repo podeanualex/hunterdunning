@@ -1,0 +1,91 @@
+
+
+
+
+.featuredJobs
+  padding: 150px 0
+  .featuredJobs__title
+    color: $content-black
+    font-size: 24px
+    font-family: 'Gotham-Book'
+    .featuredJobs__line
+      margin: 10px 0 30px 0
+      background: $purple
+      width: 100px
+      height: 2px
+      display: block
+  .featuredJobs__content
+    color: $content-black
+    font-size: 16px
+    font-family: 'Gotham-Book'
+    line-height: 24px
+  .featuredJobs__jobs
+    .featuredJobs_box
+      @include clearfix
+      padding: 20px
+      min-height: 250px
+      margin-top: 100px
+      font-family: 'Gotham-Book'
+      @include transition(all, .2s, ease-in-out)
+      &:hover
+        box-shadow: 0 5px 19px rgba(0,0,0,.07)
+        h3
+          color: $purple
+      h3
+        margin-bottom: 24px
+        font-size: 17px
+        color: $content-black
+        letter-spacing: 1.24px
+        line-height: 20px
+        @include transition(all, .2s, ease-in-out)
+      p
+        margin-bottom: 24px
+        font-size: 14px
+        color: $content-black
+        line-height: 25px
+        margin-bottom: 11px
+      .featuredJobs_tags
+        margin-bottom: 18px
+        li
+          color: #7B7B7B
+          font-size: 14px
+          display: inline
+          &::after
+            content: '•'
+            margin: 0 5px
+          &:last-child
+            &::after
+              content: ''
+      .featuredJobs_links
+        li
+          display: inline
+          &:first-child
+            &::after
+              content: '•'
+              margin: 0 5px 0 7px
+        a
+          box-shadow: inset 0 -1px 0 $purple
+          color: $purple
+          padding-bottom: 3px
+          @include transition(all, .2s, ease-in-out)
+          &:hover
+            text-decoration: none
+            color: $content-black
+            box-shadow: inset 0 0 0 $purple
+
+
+.partners
+   height: 400px
+   .partners__topBg
+      background: transparent url(../img/city-section-top-bg.svg) center center no-repeat
+      width: 100%
+      background-size: contain
+      height: 129px
+      z-index: 10
+      position: relative
+   .partners__content
+     background: #F5F5F5
+     z-index: 8
+     position: relative
+     padding: 30px 0
+     margin-top: -25px
