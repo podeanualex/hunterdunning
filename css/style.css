@@ -203,21 +203,6 @@ font-face {
 /* Gotham */
 .featuredJobs {
   padding: 150px 0; }
-  .featuredJobs .featuredJobs__title {
-    color: #464646;
-    font-size: 24px;
-    font-family: 'Gotham-Book'; }
-    .featuredJobs .featuredJobs__title .featuredJobs__line {
-      margin: 10px 0 30px 0;
-      background: #B30086;
-      width: 100px;
-      height: 2px;
-      display: block; }
-  .featuredJobs .featuredJobs__content {
-    color: #464646;
-    font-size: 16px;
-    font-family: 'Gotham-Book';
-    line-height: 24px; }
   .featuredJobs .featuredJobs__jobs .featuredJobs_box {
     padding: 20px;
     min-height: 250px;
@@ -283,21 +268,98 @@ font-face {
         color: #464646;
         box-shadow: inset 0 0 0 #B30086; }
 
+.body__title {
+  color: #464646;
+  font-size: 24px;
+  font-family: 'Gotham-Book'; }
+  .body__title .body__line {
+    margin: 10px 0 30px 0;
+    background: #B30086;
+    width: 100px;
+    height: 2px;
+    display: block; }
+
+.body__subtitle {
+  font-size: 17px;
+  font-family: 'Gotham-Book';
+  color: #464646;
+  letter-spacing: 1.24px; }
+
+.body__content {
+  color: #464646;
+  font-size: 16px;
+  font-family: 'Gotham-Book';
+  line-height: 24px; }
+
+.body__list-links li {
+  display: inline; }
+  .body__list-links li:first-child::after {
+    content: '•';
+    margin: 0 5px 0 7px; }
+
+.body__list-links a {
+  box-shadow: inset 0 -1px 0 #B30086;
+  color: #B30086;
+  padding-bottom: 3px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .body__list-links a:hover {
+    text-decoration: none;
+    color: #464646;
+    box-shadow: inset 0 0 0 #B30086; }
+
 .partners {
-  height: 400px; }
+  min-height: 400px;
+  height: auto;
+  background: #F5F5F5;
+  padding-bottom: 170px; }
   .partners .partners__topBg {
     background: transparent url(../img/city-section-top-bg.svg) center center no-repeat;
     width: 100%;
     background-size: contain;
     height: 129px;
     z-index: 10;
-    position: relative; }
+    position: relative;
+    margin-top: -107px; }
   .partners .partners__content {
-    background: #F5F5F5;
     z-index: 8;
     position: relative;
-    padding: 30px 0;
+    padding-top: 171px;
     margin-top: -25px; }
+    .partners .partners__content .partners__desc .body__title h2 {
+      width: 350px;
+      word-break: normal;
+      font-family: 'Gotham-Book';
+      font-size: 24px;
+      line-height: 31px;
+      letter-spacing: 3.5px; }
+    .partners .partners__content .partners__desc .body__content {
+      line-height: 25px;
+      font-size: 14px;
+      margin-bottom: 11px; }
+      .partners .partners__content .partners__desc .body__content li a {
+        font-family: 'Gotham-Book'; }
+    .partners .partners__content .partners__logos .partners__logoBox {
+      height: 164px;
+      background: #FFFFFF; }
+      .partners .partners__content .partners__logos .partners__logoBox img {
+        display: block;
+        margin: 0 auto;
+        vertical-align: middle; }
+
+.quote {
+  margin-top: 51px; }
+  .quote .quote__content {
+    color: #868686;
+    font-size: 14px;
+    line-height: 25px; }
+  .quote .quote__author {
+    margin-top: 12px;
+    font-family: 'Gotham-Medium';
+    font-size: 12px; }
 
 * {
   margin: 0; }

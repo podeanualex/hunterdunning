@@ -4,21 +4,6 @@
 
 .featuredJobs
   padding: 150px 0
-  .featuredJobs__title
-    color: $content-black
-    font-size: 24px
-    font-family: 'Gotham-Book'
-    .featuredJobs__line
-      margin: 10px 0 30px 0
-      background: $purple
-      width: 100px
-      height: 2px
-      display: block
-  .featuredJobs__content
-    color: $content-black
-    font-size: 16px
-    font-family: 'Gotham-Book'
-    line-height: 24px
   .featuredJobs__jobs
     .featuredJobs_box
       @include clearfix
@@ -74,8 +59,51 @@
             box-shadow: inset 0 0 0 $purple
 
 
+.body__title
+  color: $content-black
+  font-size: 24px
+  font-family: 'Gotham-Book'
+  .body__line
+    margin: 10px 0 30px 0
+    background: $purple
+    width: 100px
+    height: 2px
+    display: block
+
+.body__subtitle
+  font-size: 17px
+  font-family: 'Gotham-Book'
+  color: $content-black
+  letter-spacing: 1.24px
+
+.body__content
+  color: $content-black
+  font-size: 16px
+  font-family: 'Gotham-Book'
+  line-height: 24px
+.body__list-links
+  li
+    display: inline
+    &:first-child
+      &::after
+        content: '•'
+        margin: 0 5px 0 7px
+  a
+    box-shadow: inset 0 -1px 0 $purple
+    color: $purple
+    padding-bottom: 3px
+    @include transition(all, .2s, ease-in-out)
+    &:hover
+      text-decoration: none
+      color: $content-black
+      box-shadow: inset 0 0 0 $purple
+
+
 .partners
-   height: 400px
+   min-height: 400px
+   height: auto
+   background: #F5F5F5
+   padding-bottom: 170px
    .partners__topBg
       background: transparent url(../img/city-section-top-bg.svg) center center no-repeat
       width: 100%
@@ -83,9 +111,47 @@
       height: 129px
       z-index: 10
       position: relative
+      margin-top: -107px
    .partners__content
-     background: #F5F5F5
      z-index: 8
      position: relative
-     padding: 30px 0
+     padding-top: 171px
      margin-top: -25px
+     .partners__desc
+       .body__title
+         h2
+           width: 350px
+           word-break: normal
+           font-family: 'Gotham-Book'
+           font-size: 24px
+           line-height: 31px
+           letter-spacing: 3.5px
+       .body__content
+           line-height: 25px
+           font-size: 14px
+           margin-bottom: 11px
+           li
+             a
+               font-family: 'Gotham-Book'
+     .partners__logos
+       .partners__logoBox
+         height: 164px
+         background: #FFFFFF
+         img
+           display: block
+           margin: 0 auto
+           vertical-align: middle
+
+
+
+
+.quote
+  margin-top: 51px
+  .quote__content
+    color: #868686
+    font-size: 14px
+    line-height: 25px
+  .quote__author
+    margin-top: 12px
+    font-family: 'Gotham-Medium'
+    font-size: 12px
