@@ -10,3 +10,5 @@ gulp.task('styles', function() {
 gulp.task('default',function() {
     gulp.watch('sass/**/*.sass',['styles']);
 });
+//COMPRESSING IMAGES / MINIFY CSS/JS / HTML?MAYBE INLINE THING
+//BROWSER SYNC
