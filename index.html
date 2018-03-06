@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> Hunter Dunning </title>
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <!-- Bootstrap -->
@@ -12,16 +15,15 @@
 </head>
 <body>
   <header>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-
           <div class="col-md-2 logo">
               <a href="#">
                 <img src="img/logo.svg" alt="Hunter Dunning">
               </a>
           </div>
           <!-- /.header__logo -->
-          <ul class="col-md-6 nav pull-right">
+          <ul class="col-md-5 nav pull-right">
             <li class="nav__link nav__link-no-boxshadow nav__link-green-arrow"><a href="tel:+4401243779789">+44 (0) 1243 779789</a></li>
             <li class="nav__link nav__link-green-arrow"><a href="#">Login</a></li>
             <li class="nav__link"><a href="#">Jobs</a></li>
@@ -49,68 +51,71 @@
         </div>
         <!-- /.row -->
 
+        <div class="container">
+          <div class="row">
+            <section class="hero">
+              <h1 class="title">Build your <span>architecture</span> career with us.</h1>
+              <form class="form">
+                <input class="form__input" type="text" placeholder="Search for keywords">
+                <select class="form__select">
+                  <option value="" default>Job Option</option>
+                </select>
+                <select class="form__select">
+                  <option value="" default>Category</option>
+                </select>
+                <select class="form__select">
+                  <option value="" default>Location</option>
+                </select>
+                <input class="form__submit" type="submit">
+              </form>
+            </section>
+            <!-- /.hero -->
+          </div>
+          <!-- /.row -->
 
-        <div class="row">
-          <section class="hero">
-            <h1 class="title">Build your <span>architecture</span> career with us.</h1>
-            <form class="form">
-              <input class="form__input" type="text" placeholder="Search for keywords">
-              <select class="form__select">
-                <option value="" default>Job Option</option>
-              </select>
-              <select class="form__select">
-                <option value="" default>Category</option>
-              </select>
-              <select class="form__select">
-                <option value="" default>Location</option>
-              </select>
-              <input class="form__submit" type="submit">
-            </form>
-          </section>
-          <!-- /.hero -->
+          <section class="focus row">
+
+            <div class="col-md-6 focus__list focus__list-twocolumn">
+              <h3>FOCUS ON A CATEGORY</h3>
+              <ul>
+                <li><a href="#">Architects (79)</a></li>
+                <li><a href="#">Technicians/Technologists (29) </a></li>
+                <li><a href="#">Architectural Assistants (11)	</a></li>
+                <li><a href="#">Landscape Design & Planning (0)</a></li>
+                <li><a href="#">Senior Appointments (0)</a></li>
+                <li><a href="#">Technical Coordinators /Managers (1)</a></li>
+                <li><a href="#">Interior Designers (9)</a></li>
+                <li><a href="#">Other (3)</a></li>
+              </ul>
+            </div>
+
+            <div class="col-md-6 focus__list focus__list-threecolumn">
+              <h3>FOCUS ON A REGION</h3>
+              <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">South East</a></li>
+                <li><a href="#">South West </a></li>
+                <li><a href="#">North</a></li>
+                <li><a href="#">North East</a></li>
+                <li><a href="#">North West</a></li>
+                <li><a href="#">East Anglia</a></li>
+                <li><a href="#">East Midlands</a></li>
+                <li><a href="#">West Midlands</a></li>
+                <li><a href="#">Scotland</a></li>
+                <li><a href="#">Wales</a></li>
+                <li><a href="#">Northern Ireland</a></li>
+                <li><a href="#">Ireland</a></li>
+              </ul>
+            </div>
+
+            </section>
+          <!-- /.row -->
         </div>
-        <!-- /.row -->
-
-        <section class="focus row">
-
-          <div class="col-md-6 focus__list focus__list-twocolumn">
-            <h3>FOCUS ON A CATEGORY</h3>
-            <ul>
-              <li><a href="#">Architects (79)</a></li>
-              <li><a href="#">Technicians/Technologists (29) </a></li>
-              <li><a href="#">Architectural Assistants (11)	</a></li>
-              <li><a href="#">Landscape Design & Planning (0)</a></li>
-              <li><a href="#">Senior Appointments (0)</a></li>
-              <li><a href="#">Technical Coordinators /Managers (1)</a></li>
-              <li><a href="#">Interior Designers (9)</a></li>
-              <li><a href="#">Other (3)</a></li>
-            </ul>
-          </div>
-
-          <div class="col-md-6 focus__list focus__list-threecolumn">
-            <h3>FOCUS ON A REGION</h3>
-            <ul>
-              <li><a href="#">London</a></li>
-              <li><a href="#">South East</a></li>
-              <li><a href="#">South West </a></li>
-              <li><a href="#">North</a></li>
-              <li><a href="#">North East</a></li>
-              <li><a href="#">North West</a></li>
-              <li><a href="#">East Anglia</a></li>
-              <li><a href="#">East Midlands</a></li>
-              <li><a href="#">West Midlands</a></li>
-              <li><a href="#">Scotland</a></li>
-              <li><a href="#">Wales</a></li>
-              <li><a href="#">Northern Ireland</a></li>
-              <li><a href="#">Ireland</a></li>
-            </ul>
-          </div>
-
-          </section>
-        <!-- /.row -->
-
+        <!-- /.container -->
     </div>
-    <!-- /.container -->
+    <!-- /.container-fluid -->
+
+    <div class="header-bottom-bg"></div>
 
   </header>
 
@@ -331,32 +336,46 @@
               <img src="img/logos/9.png" class="" alt="">
             </div>
 
-
-
-
-
           </div>
-
 
         </div>
       </div>
     </div>
     <!-- /.partners -->
-
-
-
   </div>
-
-
-
 </section>
 
 
+<footer class="container-fluid">
+    <div class="footer__top-bg"></div>
+    <div class="row footer__content">
+      <div class="col-md-5 col-xs-12">
+        <ul class="footer__social-links">
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+        <div class="footer__copyright">
+          &copy; 2011 HUNTERDUNNING LTD.  DESIGN & BUILD BY HINGE LTD
+        </div>
+        <!-- /.footer__social-links -->
+      </div>
+      <div class="col-md-6 col-xs-12 pull-right">
+        <ul class="footer__navigation pull-right">
+          <li><a href="#">ARCHITECTURE JOBS</a></li>
+          <li><a href="#">TERMS & CONDITIONS</a></li>
+          <li><a href="#">PRIVACY POLICY</a></li>
+          <li><a href="#">SITEMAP</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.row -->
+  <!-- /.container -->
+</footer>
+<!-- /.container-fluid -->
 
 
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
 
 
 

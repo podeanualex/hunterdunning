@@ -137,21 +137,27 @@
        .partners__logoBox
          height: 164px
          background: #FFFFFF
+         border-bottom: 1px solid #F5F5F5
+         border-right: 1px solid #F5F5F5
+         &:nth-child(3n)
+           border-right: 0
          img
            display: block
            margin: 0 auto
-           vertical-align: middle
-
-
+           @include transition(all, .2s, ease-in-out)
+         &:hover
+           img
+             transform: scale(1.07)
 
 
 .quote
   margin-top: 51px
   .quote__content
     color: #868686
+    margin-top: 22px
     font-size: 14px
     line-height: 25px
   .quote__author
-    margin-top: 12px
+    margin-top: 24px
     font-family: 'Gotham-Medium'
     font-size: 12px
