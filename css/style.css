@@ -243,9 +243,63 @@
   margin-bottom: 33px; }
 
 .job__skills li {
-  margin-bottom: 30px; }
-  .job__skills li::after {
-    content: ''; }
+  margin-bottom: 30px;
+  padding-left: 14px;
+  position: relative; }
+  .job__skills li::before {
+    content: '';
+    background: url("../img/job-skills-arrow.svg") 0 0 no-repeat;
+    display: inline-block;
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    left: -6px; }
+
+.job__apply .apply__separator {
+  text-align: center;
+  width: 320px;
+  height: 50px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  position: relative; }
+  .job__apply .apply__separator span {
+    background: #ffffff;
+    position: absolute; }
+  .job__apply .apply__separator hr {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background: #E9E9E9; }
+
+.job__apply .apply__btn {
+  width: 320px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  .job__apply .apply__btn:hover {
+    background: transparent; }
+
+.job__apply .apply__btn-linkedin {
+  background: #0976B4;
+  border: 2px solid #0976B4; }
+  .job__apply .apply__btn-linkedin:hover {
+    color: #0976B4; }
+
+.job__apply .apply__btn-link {
+  background: #B30086;
+  border: 2px solid #B30086; }
+  .job__apply .apply__btn-link:hover {
+    color: #B30086; }
 
 /* ====================
     Reset

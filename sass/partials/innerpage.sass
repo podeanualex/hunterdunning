@@ -220,6 +220,54 @@
 .job__skills
   li
     margin-bottom: 30px
-    &::after
+    padding-left: 14px
+    position: relative
+    &::before
       content: ''
-      
+      background: url('../img/job-skills-arrow.svg') 0 0 no-repeat
+      display: inline-block
+      width: 6px
+      height: 10px
+      position: absolute
+      left: -6px
+
+.job__apply
+  .apply__separator
+    text-align: center
+    width: 320px
+    height: 50px
+    text-align: center
+    display: block
+    margin: 0 auto
+    position: relative
+    span
+      background: #ffffff
+      position: absolute
+    hr
+      width: 100%
+      height: 2px
+      position: absolute
+      background: #E9E9E9
+  .apply__btn
+    width: 320px
+    height: 50px
+    line-height: 50px
+    text-align: center
+    text-transform: uppercase
+    display: block
+    margin: 0 auto
+    cursor: pointer
+    @include transition(all, .2s, ease-in-out)
+    &:hover
+      background: transparent
+    //FONT AVENIR
+  .apply__btn-linkedin
+    background: #0976B4
+    border: 2px solid #0976B4
+    &:hover
+      color: #0976B4
+  .apply__btn-link
+    background: $purple
+    border: 2px solid $purple
+    &:hover
+      color: $purple
