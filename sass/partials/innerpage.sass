@@ -2,135 +2,224 @@
   padding: 100px 0
 
 .listedjobs
-  .listedjobs__title
-    font-size: 30px
-    font-family: 'Gotham-Bold'
+
+.listedjobs__title
+  font-size: 30px
+  font-family: 'Gotham-Bold'
     //CHANGEFONT
-  .listedjobs__filters
-    margin-top: 60px
-    background: #F5F5F5
-    padding: 20px
+
+.listedjobs__stats
+  text-align: right
+  font-size: 20px
+  color: #000000
+
+.listedjobs__filters
+  margin-top: 60px
+  background: #F5F5F5
+  padding: 20px
+  .filters__title
+    color: $content-black
+    text-transform: uppercase
+    margin-bottom: 21px
+  .filters__keywords-container
+    background: #ffffff
+    border: 1px solid #DBDBDB
+    position: relative
+    min-height: 70px
+    height: auto
+    padding: 18px 18px 0 18px
+    margin-bottom: 15px
+    label
+      color: $content-black
+      font-size: 12px
+      margin-bottom: 6px
     .filters__text
-      display: block
-      width: 100%
-      border-radius: 0px!important
-      margin-bottom: 15px
-      height: 45px
-      padding: 7px
-      border: 1px solid #dddddd
-      &:focus
-        outline: 0
-    .filters__select
-      display: block
-      width: 100%
-      border-radius: 0
-      margin-bottom: 15px
-      height: 45px
-      padding: 7px
-      border: 1px solid #dddddd
-      border-radius: 0
-      padding: 0 21px
-      -webkit-appearance: none
-      -moz-appearance: none
-      background: #FFF url(../img/form-select-triangle.svg) 230px center no-repeat
-      &:focus
-        outline: 0
-    .filters__submit
-      display: block
-      height: 45px
-      width: 100%
-      background: $purple
       border: 0
-      color: #ffffff
-      text-transform: uppercase
-  .listedjobs__pagination
-    margin-top: 30px
-    li
-      display: inline-block
-      border: 1px solid #D8D8D8
-      width: 30px
-      height: 30px
-      text-align: center
-      line-height: 30px
+      color: $purple
+      padding-left: 0
+      &::placeholder
+        color: #C9C9C9
+  .filters__text
+    display: block
+    width: 100%
+    border-radius: 0px!important
+    margin-bottom: 15px
+    height: 45px
+    padding: 7px
+    border: 1px solid #dddddd
+    &:focus
+      outline: 0
+  .filters__select
+    display: block
+    width: 100%
+    border-radius: 0
+    margin-bottom: 15px
+    height: 45px
+    padding: 7px
+    border: 1px solid #dddddd
+    border-radius: 0
+    padding: 0 21px
+    -webkit-appearance: none
+    -moz-appearance: none
+    background: #FFF url(../img/form-select-triangle.svg) 230px center no-repeat
+    &:focus
+      outline: 0
+  .filters__submit
+    display: block
+    height: 45px
+    width: 100%
+    background: $purple
+    border: 0
+    color: #ffffff
+    text-transform: uppercase
+.listedjobs__pagination
+  margin-top: 30px
+  li
+    display: inline-block
+    border: 1px solid #D8D8D8
+    width: 30px
+    height: 30px
+    text-align: center
+    line-height: 30px
+    a
+      color: #000000
+      display: block
+    @include transition(all, .2s, ease-in-out)
+    &:hover
+      background: $green
+      border-color: $green
+      color: #FFFFFF
       a
-        color: #000000
-        display: block
+        text-decoration: none
+        color: #FFFFFF
+    &.pagination__separator
+      border: 0
+      &:hover
+        background: transparent
+        color: initial
+    &.pagination__next-button
+      width: auto
+      padding-left: 5px
+      padding-right: 5px
+      background: $purple
+      border-color: $purple
       @include transition(all, .2s, ease-in-out)
       &:hover
         background: $green
         border-color: $green
+      a
         color: #FFFFFF
-        a
-          text-decoration: none
-          color: #FFFFFF
-      &.pagination__separator
-        border: 0
-        &:hover
-          background: transparent
-          color: initial
-      &.pagination__next-button
-        width: auto
-        padding-left: 5px
-        padding-right: 5px
-        background: $purple
-        border-color: $purple
-        @include transition(all, .2s, ease-in-out)
-        &:hover
-          background: $green
-          border-color: $green
-        a
-          color: #FFFFFF
-      &.pagination__prev-button
-        width: auto
-        padding-left: 5px
-        padding-right: 5px
-        background: #AFAFAF
-        border-color: #AFAFAF
-        @include transition(all, .2s, ease-in-out)
-        &:hover
-          background: $green
-          border-color: $green
-        a
-          color: #FFFFFF
-  .listedjobs__stats
-    text-align: right
-    font-size: 20px
-    color: #000000
-  .listedjobs__list
-    padding-top: 65px
-    .entry
-      padding: 23px 0
-      border-bottom: 1px solid #D8D8D8
+    &.pagination__prev-button
+      width: auto
+      padding-left: 5px
+      padding-right: 5px
+      background: #AFAFAF
+      border-color: #AFAFAF
       @include transition(all, .2s, ease-in-out)
       &:hover
-        .entry__details
-          h3
-            color: $purple
-      &:first-child
-        border-top: 1px solid #D8D8D8
-      @include clearfix
+        background: $green
+        border-color: $green
+      a
+        color: #FFFFFF
+
+.listedjobs__list
+  padding-top: 65px
+  .entry
+    padding: 23px 0
+    border-bottom: 1px solid #D8D8D8
+    @include transition(all, .2s, ease-in-out)
+    &:hover
       .entry__details
-        float: left
         h3
-          font-family: 'Gotham-Bold'
-          //CHANGEFONT
-          font-size: 20px
-        .list__inline-gray
-          margin-bottom: 0
-          li
-            @include transition(all, .2s, ease-in-out)
-      .entry__button
-        a
-          width: 154px
-          height: 40px
-          text-align: center
-          border: 3px solid $purple
           color: $purple
-          display: inline-block
-          line-height: 38px
-          font-size: 15px
+    &:first-child
+      border-top: 1px solid #D8D8D8
+    @include clearfix
+    .entry__details
+      float: left
+      h3
+        font-family: 'Gotham-Bold'
+        //CHANGEFONT
+        font-size: 20px
+      .list__inline-gray
+        margin-bottom: 0
+        li
           @include transition(all, .2s, ease-in-out)
-          &:hover
-            text-decoration: none
-            background: $purple
-            color: #FFFFFF
+    .entry__button
+      a
+        width: 154px
+        height: 40px
+        text-align: center
+        border: 3px solid $purple
+        color: $purple
+        display: inline-block
+        line-height: 38px
+        font-size: 15px
+        @include transition(all, .2s, ease-in-out)
+        &:hover
+          text-decoration: none
+          background: $purple
+          color: #FFFFFF
+
+
+.job
+  .body__title
+    font-size: 45px
+    //fontAvenit
+
+
+.job__breadcrumbs
+  margin-bottom: 35px
+  li
+    display: inline-block
+    font-size: 12px
+    //FONT AVENIR
+    color: $purple
+    margin-right: 14px
+    &:last-child
+      margin-right: 0
+      &::after
+        background: transparent
+    &::after
+      content: ''
+      background: url('../img/breadcrumbs-arrow.svg') 0 0 no-repeat
+      width: 7px
+      height: 8px
+      display: inline-block
+      margin-left: 14px
+    a
+      color: inherit
+
+
+.job__description
+  .job__summary
+    line-height: 27px
+    font-size: 18px
+    margin-bottom: 60px
+  .job__infographic
+    padding: 30px 18px
+    background: #F5F5F5
+    .infographic__label
+      color: #AFAFAF
+      text-transform: uppercase
+      margin-bottom: 7px
+      font-size: 10px
+    .infographic__entry
+      color: $content-black
+      font-size: 15px
+      //FONT AVENIR
+      margin-bottom: 14px
+  .job__info
+    p
+      font-size: 15px
+      line-height: 25px
+      margin-bottom: 33px
+      //FONT AVENIR
+
+
+.job__skills
+  li
+    margin-bottom: 30px
+    &::after
+      content: ''
+      

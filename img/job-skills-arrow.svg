@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-right6</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design---desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Job-page" transform="translate(-160.000000, -1344.000000)" fill="#AEE119">
+            <g id="text-content" transform="translate(160.000000, 192.000000)">
+                <g id="list" transform="translate(0.000000, 869.000000)">
+                    <g id="entypo/arrow-right6" transform="translate(0.000000, 283.000000)">
+                        <path d="M0.791,8.545 C0.526,8.813 0.526,9.246 0.791,9.514 C1.055,9.782 1.485,9.782 1.75,9.514 L5.542,5.645 C5.807,5.377 5.807,4.944 5.542,4.676 L1.75,0.807 C1.485,0.539 1.056,0.539 0.791,0.807 C0.526,1.075 0.526,1.508 0.79,1.776 L3.9,5.161 L0.791,8.545 L0.791,8.545 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
