@@ -1,4 +1,16 @@
 @charset "UTF-8";
+.list__inline-gray {
+  margin-bottom: 18px; }
+  .list__inline-gray li {
+    color: #7B7B7B;
+    font-size: 14px;
+    display: inline; }
+    .list__inline-gray li::after {
+      content: '•';
+      margin: 0 5px; }
+    .list__inline-gray li:last-child::after {
+      content: ''; }
+
 /* ====================
     Reset
    @mixin =================== */
@@ -44,6 +56,12 @@ table {
 header {
   padding-top: 60px;
   background: url("../img/header-bg-simple.png") 0 0 no-repeat; }
+  header.header__inner_page {
+    background: #FFFFFF;
+    background-image: none;
+    border-bottom: 2px solid #B30086;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px 0; }
 
 .header-bottom-bg {
   background: transparent url(../img/header-bottom-bg.png) center center no-repeat;
@@ -60,12 +78,12 @@ header {
   .nav .nav__link {
     float: left;
     line-height: 30px;
-    margin-right: 26px;
+    margin-right: 25.5px;
     position: relative; }
     .nav .nav__link:hover a {
       text-decoration: none;
       padding-bottom: 5px;
-      box-shadow: 0 1px 0 #B30086; }
+      box-shadow: 0 2px 0 #B30086; }
     .nav .nav__link a {
       color: #000;
       -webkit-transition: all 0.2s ease-in-out;
@@ -98,6 +116,8 @@ header {
     -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
+  .nav #toggleNav {
+    margin-right: 0; }
 
 .hero {
   margin: 122px 0; }
@@ -247,17 +267,6 @@ font-face {
       color: #464646;
       line-height: 25px;
       margin-bottom: 11px; }
-    .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags {
-      margin-bottom: 18px; }
-      .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags li {
-        color: #7B7B7B;
-        font-size: 14px;
-        display: inline; }
-        .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags li::after {
-          content: '•';
-          margin: 0 5px; }
-        .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_tags li:last-child::after {
-          content: ''; }
     .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_links li {
       display: inline; }
       .featuredJobs .featuredJobs__jobs .featuredJobs_box .featuredJobs_links li:first-child::after {
@@ -385,6 +394,9 @@ footer {
   background: url("../img/footer-bg.jpg") 0 0 no-repeat;
   position: relative;
   height: auto; }
+  footer.innerfooter .footer__top-bg {
+    background: transparent url("../img/footer-top-bg-white.svg") center center no-repeat;
+    background-size: contain; }
   footer .footer__top-bg {
     background: transparent url("../img/footer-top-bg.svg") center center no-repeat;
     width: 100%;
@@ -440,6 +452,168 @@ footer {
       footer .footer__navigation li a {
         color: #FFFFFF;
         font-size: 12px; }
+
+.innerpage {
+  padding: 100px 0; }
+
+.listedjobs .listedjobs__title {
+  font-size: 30px;
+  font-family: 'Gotham-Bold'; }
+
+.listedjobs .listedjobs__filters {
+  margin-top: 60px;
+  background: #F5F5F5;
+  padding: 20px; }
+  .listedjobs .listedjobs__filters .filters__text {
+    display: block;
+    width: 100%;
+    border-radius: 0px !important;
+    margin-bottom: 15px;
+    height: 45px;
+    padding: 7px;
+    border: 1px solid #dddddd; }
+    .listedjobs .listedjobs__filters .filters__text:focus {
+      outline: 0; }
+  .listedjobs .listedjobs__filters .filters__select {
+    display: block;
+    width: 100%;
+    border-radius: 0;
+    margin-bottom: 15px;
+    height: 45px;
+    padding: 7px;
+    border: 1px solid #dddddd;
+    border-radius: 0;
+    padding: 0 21px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #FFF url(../img/form-select-triangle.svg) 230px center no-repeat; }
+    .listedjobs .listedjobs__filters .filters__select:focus {
+      outline: 0; }
+  .listedjobs .listedjobs__filters .filters__submit {
+    display: block;
+    height: 45px;
+    width: 100%;
+    background: #B30086;
+    border: 0;
+    color: #ffffff;
+    text-transform: uppercase; }
+
+.listedjobs .listedjobs__pagination {
+  margin-top: 30px; }
+  .listedjobs .listedjobs__pagination li {
+    display: inline-block;
+    border: 1px solid #D8D8D8;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .listedjobs .listedjobs__pagination li a {
+      color: #000000;
+      display: block; }
+    .listedjobs .listedjobs__pagination li:hover {
+      background: #AEE119;
+      border-color: #AEE119;
+      color: #FFFFFF; }
+      .listedjobs .listedjobs__pagination li:hover a {
+        text-decoration: none;
+        color: #FFFFFF; }
+    .listedjobs .listedjobs__pagination li.pagination__separator {
+      border: 0; }
+      .listedjobs .listedjobs__pagination li.pagination__separator:hover {
+        background: transparent;
+        color: initial; }
+    .listedjobs .listedjobs__pagination li.pagination__next-button {
+      width: auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      background: #B30086;
+      border-color: #B30086;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .listedjobs .listedjobs__pagination li.pagination__next-button:hover {
+        background: #AEE119;
+        border-color: #AEE119; }
+      .listedjobs .listedjobs__pagination li.pagination__next-button a {
+        color: #FFFFFF; }
+    .listedjobs .listedjobs__pagination li.pagination__prev-button {
+      width: auto;
+      padding-left: 5px;
+      padding-right: 5px;
+      background: #AFAFAF;
+      border-color: #AFAFAF;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .listedjobs .listedjobs__pagination li.pagination__prev-button:hover {
+        background: #AEE119;
+        border-color: #AEE119; }
+      .listedjobs .listedjobs__pagination li.pagination__prev-button a {
+        color: #FFFFFF; }
+
+.listedjobs .listedjobs__stats {
+  text-align: right;
+  font-size: 20px;
+  color: #000000; }
+
+.listedjobs .listedjobs__list {
+  padding-top: 65px; }
+  .listedjobs .listedjobs__list .entry {
+    padding: 23px 0;
+    border-bottom: 1px solid #D8D8D8;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .listedjobs .listedjobs__list .entry:hover .entry__details h3 {
+      color: #B30086; }
+    .listedjobs .listedjobs__list .entry:first-child {
+      border-top: 1px solid #D8D8D8; }
+    .listedjobs .listedjobs__list .entry::after {
+      display: block;
+      content: "";
+      clear: both; }
+    .listedjobs .listedjobs__list .entry .entry__details {
+      float: left; }
+      .listedjobs .listedjobs__list .entry .entry__details h3 {
+        font-family: 'Gotham-Bold';
+        font-size: 20px; }
+      .listedjobs .listedjobs__list .entry .entry__details .list__inline-gray {
+        margin-bottom: 0; }
+        .listedjobs .listedjobs__list .entry .entry__details .list__inline-gray li {
+          -webkit-transition: all 0.2s ease-in-out;
+          -moz-transition: all 0.2s ease-in-out;
+          -ms-transition: all 0.2s ease-in-out;
+          -o-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out; }
+    .listedjobs .listedjobs__list .entry .entry__button a {
+      width: 154px;
+      height: 40px;
+      text-align: center;
+      border: 3px solid #B30086;
+      color: #B30086;
+      display: inline-block;
+      line-height: 38px;
+      font-size: 15px;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      -ms-transition: all 0.2s ease-in-out;
+      -o-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+      .listedjobs .listedjobs__list .entry .entry__button a:hover {
+        text-decoration: none;
+        background: #B30086;
+        color: #FFFFFF; }
 
 * {
   margin: 0; }

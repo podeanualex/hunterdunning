@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1319px" height="71px" viewBox="0 0 1319 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Design---desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="homepage" transform="translate(-111.000000, -2792.000000)">
+            <g id="footer" transform="translate(10.000000, 2792.000000)">
+                <g id="Group-Copy" transform="translate(740.500000, 2.500000) scale(1, -1) translate(-740.500000, -2.500000) translate(59.000000, -66.000000)">
+                    <g id="Group-2">
+                        <polygon id="Path-502" fill="#000000" style="mix-blend-mode: overlay;" opacity="0.161089086" points="42 71 221 24 324 75.5 350 127 0 115"></polygon>
+                        <path d="M42,71 L207,44 L315,71 L376,99 L350,127 L0,115 L42,71 Z" id="Path-502-Copy" fill="#FFFFFF"></path>
+                        <polygon id="Path-503-Copy" fill="#000000" style="mix-blend-mode: overlay;" opacity="0.161089086" points="408 71 592 0 653 97 378 98"></polygon>
+                        <polygon id="Path-503" fill="#FFFFFF" points="408 71 590 17 645 81 400 113"></polygon>
+                        <polygon id="Path-504" fill="#000000" style="mix-blend-mode: overlay;" opacity="0.161089086" points="1303 76 1362 44 1363 90"></polygon>
+                        <polygon id="Path-504-Copy" fill="#FFFFFF" points="1303 73.5 1362 57 1363 90"></polygon>
+                        <polygon id="Path-505" fill="#000000" style="mix-blend-mode: overlay;" opacity="0.161089086" points="944 137 884 72 944 19 1128 100"></polygon>
+                        <polygon id="Path-505-Copy" fill="#FFFFFF" points="944 137 884 72 944 44 1128 100"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

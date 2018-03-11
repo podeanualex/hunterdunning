@@ -7,7 +7,12 @@
 header
   padding-top: 60px
   background: url('../img/header-bg-simple.png') 0 0 no-repeat
-  .logo
+  &.header__inner_page
+     background: #FFFFFF
+     background-image: none
+     border-bottom: 2px solid $purple
+     box-shadow: 0px 5px 10px  rgba(0,0,0,.08)
+     padding: 20px 0
 .header-bottom-bg
   background: transparent url(../img/header-bottom-bg.png) center center no-repeat
   width: 100%
@@ -22,13 +27,13 @@ header
   .nav__link
     float: left
     line-height: 30px
-    margin-right: 26px
+    margin-right: 25.5px
     position: relative
     &:hover
       a
         text-decoration: none
         padding-bottom: 5px
-        box-shadow: 0 1px 0 $purple
+        box-shadow: 0 2px 0 $purple
     a
       color: #000
       @include transition(all, .2s, ease-in-out)
@@ -55,6 +60,8 @@ header
         .line
           fill: #FFF
           @include transition(all, .2s, ease-in-out)
+  #toggleNav
+    margin-right: 0
 
 
 .hero
