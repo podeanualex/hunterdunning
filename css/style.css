@@ -11,6 +11,19 @@
     .list__inline-gray li:last-child::after {
       content: ''; }
 
+.list__two-colours {
+  padding: 30px 18px;
+  background: #F5F5F5; }
+  .list__two-colours .list__label {
+    color: #AFAFAF;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-size: 10px; }
+  .list__two-colours .list__entry {
+    color: #464646;
+    font-size: 15px;
+    margin-bottom: 14px; }
+
 .innerpage {
   padding: 100px 0; }
 
@@ -224,19 +237,6 @@
   font-size: 18px;
   margin-bottom: 60px; }
 
-.job__description .job__infographic {
-  padding: 30px 18px;
-  background: #F5F5F5; }
-  .job__description .job__infographic .infographic__label {
-    color: #AFAFAF;
-    text-transform: uppercase;
-    margin-bottom: 7px;
-    font-size: 10px; }
-  .job__description .job__infographic .infographic__entry {
-    color: #464646;
-    font-size: 15px;
-    margin-bottom: 14px; }
-
 .job__description .job__info p {
   font-size: 15px;
   line-height: 25px;
@@ -255,22 +255,50 @@
     position: absolute;
     left: -6px; }
 
+.job__apply li {
+  margin: 0 auto 25px auto; }
+
 .job__apply .apply__separator {
   text-align: center;
   width: 320px;
   height: 50px;
   text-align: center;
   display: block;
-  margin: 0 auto;
   position: relative; }
   .job__apply .apply__separator span {
     background: #ffffff;
-    position: absolute; }
+    position: absolute;
+    top: 19px;
+    z-index: 2;
+    padding: 0 15px;
+    left: 133px;
+    font-size: 10px; }
   .job__apply .apply__separator hr {
     width: 100%;
     height: 2px;
     position: absolute;
     background: #E9E9E9; }
+
+.job__apply .apply_card {
+  background: #f5f5f5;
+  width: 320px;
+  display: block;
+  padding: 20px 30px; }
+  .job__apply .apply_card .card__avatar {
+    border-radius: 50%;
+    float: left; }
+  .job__apply .apply_card .card__name {
+    width: 160px;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.7px;
+    float: left;
+    margin: 12px 0 0 20px; }
+  .job__apply .apply_card .list__two-colours {
+    padding: 0;
+    margin-top: 26px; }
+    .job__apply .apply_card .list__two-colours .list__entry a {
+      color: #B30086; }
 
 .job__apply .apply__btn {
   width: 320px;
@@ -279,27 +307,49 @@
   text-align: center;
   text-transform: uppercase;
   display: block;
-  margin: 0 auto;
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
+  .job__apply .apply__btn .fa {
+    font-size: 20px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .job__apply .apply__btn a {
+    color: #fff; }
   .job__apply .apply__btn:hover {
     background: transparent; }
+    .job__apply .apply__btn:hover a {
+      text-decoration: none; }
+      .job__apply .apply__btn:hover a .fa {
+        transform: scale(1.2); }
 
 .job__apply .apply__btn-linkedin {
   background: #0976B4;
   border: 2px solid #0976B4; }
-  .job__apply .apply__btn-linkedin:hover {
+  .job__apply .apply__btn-linkedin:hover a {
     color: #0976B4; }
 
 .job__apply .apply__btn-link {
   background: #B30086;
   border: 2px solid #B30086; }
-  .job__apply .apply__btn-link:hover {
+  .job__apply .apply__btn-link:hover a {
     color: #B30086; }
+
+.job__apply .apply__btn-share {
+  background: #F5F5F5; }
+  .job__apply .apply__btn-share a {
+    color: #000000;
+    font-size: 15; }
+  .job__apply .apply__btn-share:hover {
+    background: #B30086; }
+    .job__apply .apply__btn-share:hover a {
+      color: #ffffff; }
 
 /* ====================
     Reset
