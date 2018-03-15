@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+let cleanCSS = require('gulp-clean-css');
 
 gulp.task('styles', function() {
     gulp.src('sass/**/*.sass')
@@ -8,7 +9,12 @@ gulp.task('styles', function() {
 });
 
 gulp.task('default',function() {
-    gulp.watch('sass/**/*.sass',['styles']);
+  gulp.watch('sass/**/*.sass',['styles']);
 });
-//COMPRESSING IMAGES / MINIFY CSS/JS / HTML?MAYBE INLINE THING
-//BROWSER SYNC
+
+
+gulp.task('minify-css', () => {
+  return gulp.src('css/*.css')
+    .pipe(cleanCSS({compatibility: 'ie8'}))
+    .pipe(gulp.dest('dist'));
+});

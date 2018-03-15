@@ -59,8 +59,40 @@ header
         .line
           fill: #FFF
           @include transition(all, .2s, ease-in-out)
+  #removeFullNav
+      float: right
+      list-style: none
+      padding-top: 69px
+      margin-right: 58px
+      &:hover
+        background: transparent
+        svg
+          background: transparent
+          transform: scale(1.1)
+
+.fullMenu__list
+  li
+    text-align: center
+    font-size: 60px
+    margin-bottom: 40px
+    &.small-font
+      font-size: 28px
+      margin-bottom: 25px
+    &.separator
+      width: 150px
+      height: 1px
+      background: #FFFFFF
+      margin: 0px auto 60px auto
+      display: block
+    a
+      color: #FFFFFF
+    &:hover
+      a
+        text-decoration: none
+
   #toggleNav
     margin-right: 0
+
 
 
 .hero
@@ -117,8 +149,6 @@ header
       @include transition(all, .1s, ease-in-out)
       &:hover
         background: #000 url('../img/search-icon-btn-white.svg') center center no-repeat
-
-
 
 .focus
   .focus__list
