@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.list__inline-gray {
+  margin-bottom: 18px; }
+  .list__inline-gray li {
+    color: #7B7B7B;
+    font-size: 14px;
+    display: inline; }
+    .list__inline-gray li::after {
+      content: '•';
+      margin: 0 5px; }
+    .list__inline-gray li:last-child::after {
+      content: ''; }
+
+.list__two-colours {
+  padding: 30px 18px;
+  background: #F5F5F5; }
+  .list__two-colours .list__label {
+    color: #AFAFAF;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-size: 10px; }
+  .list__two-colours .list__entry {
+    color: #464646;
+    font-size: 15px;
+    margin-bottom: 14px; }
+
+.col-centered {
+  float: none;
+  margin: 0 auto; }
