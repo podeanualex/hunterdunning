@@ -88,7 +88,7 @@
     padding: 0 21px;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background: #FFF url(../img/form-select-triangle.svg) 230px center no-repeat; }
+    background: #FFF url(../img/form-select-triangle.svg) 95% center no-repeat; }
     .listedjobs__filters .filters__select:focus {
       outline: 0; }
   .listedjobs__filters .filters__submit {
@@ -413,6 +413,8 @@ header {
   padding-top: 60px;
   background: url("../img/header-bg-simple.png") 0 0 no-repeat;
   background-size: cover; }
+  header .logo {
+    float: left; }
   header.header__inner_page {
     background: #FFFFFF;
     background-image: none;
@@ -422,7 +424,7 @@ header {
 .header-bottom-bg {
   background: transparent url(../img/header-bottom-bg.png) center center no-repeat;
   width: 100%;
-  height: 137px;
+  height: 125px;
   background-size: contain;
   z-index: 10;
   position: relative;
@@ -436,6 +438,8 @@ header {
     line-height: 30px;
     margin-right: 25.5px;
     position: relative; }
+    .nav .nav__link:last-child {
+      margin-right: 0; }
     .nav .nav__link:hover a {
       text-decoration: none;
       padding-bottom: 5px;
@@ -475,7 +479,7 @@ header {
   .nav #removeFullNav {
     float: right;
     list-style: none;
-    padding-top: 69px;
+    padding-top: 31px;
     margin-right: 58px; }
     .nav #removeFullNav:hover {
       background: transparent; }
@@ -620,6 +624,7 @@ font-face {
   .featuredJobs .featuredJobs__jobs .featuredJobs_box {
     padding: 20px;
     min-height: 250px;
+    height: 250px;
     margin-top: 100px;
     font-family: 'Gotham-Book';
     -webkit-transition: all 0.2s ease-in-out;
@@ -723,7 +728,7 @@ font-face {
     background: transparent url(../img/city-section-top-bg.svg) center center no-repeat;
     width: 100%;
     background-size: contain;
-    height: 129px;
+    height: 150px;
     z-index: 10;
     position: relative;
     margin-top: -107px; }
@@ -849,6 +854,14 @@ footer {
   100% {
     opacity: 1; } }
 
+@media only screen and (min-width: 1200px) {
+  .partners__topBg {
+    height: 135px !important; } }
+
+@media only screen and (min-width: 1024px) {
+  .partners__topBg {
+    height: 149px; } }
+
 @media only screen and (max-width: 1024px) {
   .featuredJobs_box {
     margin-top: 10px !important; }
@@ -859,14 +872,7 @@ footer {
   .job__summary {
     margin: 2% auto; }
   .job .body__title {
-    font-size: 2em; } }
-
-@media only screen and (max-width: 768px) {
-  header {
-    height: auto;
-    padding: 3% 0; }
-  .nav__link {
-    display: none; }
+    font-size: 2em; }
   .hero {
     margin-top: 40px; }
     .hero .title {
@@ -880,12 +886,27 @@ footer {
     display: block;
     width: 100% !important;
     margin: 0 auto;
-    background: #FFF url(../img/form-select-triangle.svg) right center no-repeat !important;
+    background: #FFF url(../img/form-select-triangle.svg) 95% center no-repeat !important;
     margin: 0 auto 15px auto; }
   .form .form__submit {
     display: block;
     width: 100% !important;
     margin: 0 auto; }
+  .header-bottom-bg {
+    height: 97px; }
+  .partners__topBg {
+    height: 164px !important; } }
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 3% 0 0 0; }
+    header .hero {
+      margin-bottom: 50px; }
+    header .focus__list {
+      margin-top: 50px; }
+  .nav__link {
+    display: none; }
   .featuredJobs {
     padding-top: 60px; }
   .listedjobs__title {
@@ -910,28 +931,52 @@ footer {
   .job__info {
     padding-left: 4%;
     padding-right: 4%; }
+  .header-bottom-bg {
+    height: 56px; }
   footer {
     height: auto;
     padding: 10% 0; }
     footer .footer__social-links {
       display: block;
-      margin: 0 auto;
+      margin: 0 auto 20px auto;
       width: 130px; }
     footer .footer__copyright {
-      text-align: center; }
-    footer .footer__navigation {
-      float: none !important;
-      margin: 20 auto;
+      text-align: center;
+      width: 300px;
       display: block;
-      text-align: center; }
+      line-height: 22px;
+      margin: 20px auto; }
+    footer .footer__navigation {
+      float: none !important; }
       footer .footer__navigation li {
-        display: block; } }
+        display: block;
+        margin-right: auto; }
+        footer .footer__navigation li a {
+          margin: 9px auto;
+          display: block;
+          text-align: center; }
+  .partners__topBg {
+    height: 168px;
+    margin-top: -104px; }
+  .footer__top-bg {
+    height: 115px;
+    margin-top: -98px; } }
 
 @media only screen and (max-width: 480px) {
   .hero .title {
     font-size: 1.4em;
     width: auto;
-    text-align: center; } }
+    text-align: center; }
+  .header-bottom-bg {
+    height: 45px; }
+  .partners__topBg {
+    height: 175px !important; }
+  .partners {
+    padding-bottom: 45px; }
+  .footer__content {
+    margin-top: 10px !important; }
+  .footer__top-bg {
+    height: 18px; } }
 
 * {
   margin: 0; }
